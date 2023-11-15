@@ -4,10 +4,17 @@
 
 <div id="flats">
   <% @flats.each do |flat| %>
-    <%= render flat %>
-    <p>
+
+    <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= flat.name %></h5>
+      <p class="card-text"><%= flat.description %></p>
+    </div>
+    <div class="card-footer">
       <%= link_to "Show this flat", flat %>
-    </p>
+    </div>
+  </div>
   <% end %>
 </div>
 
